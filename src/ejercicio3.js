@@ -1,10 +1,10 @@
 // Inserte el código aquí
 //Parte 1.
 function clonarArreglo() {}
-let Audi = "LLantas";
+let Audi = "Serie A";
 
 let nuevoAudi = [...Audi];
-nuevoAudi.push(Capó);
+nuevoAudi.filter(Solo Audi);
 
 console.log(Audi, nuevoAudi);
 
