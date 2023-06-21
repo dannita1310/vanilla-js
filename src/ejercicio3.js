@@ -19,17 +19,17 @@ nuevoMercedes.push(Mercedes);
 console.log(Mercedes, nuevoMercedes);
 
 //Parte 3.
-function sumar(acumulador, valorActual) {
+function sumar(valores, valorActual) {
   let suma = [1, 2, 3, 4].reduce(sumaTotal, 0);
 
-  let sumarActual = acumulador + valorActual;
+  let sumarActual = valores + valorActual;
   console.log(sumarActual);
 
   return sumarActual;
 }
 
-console.log({ sumar });
-console.log(acumulador);
+console.log(sumar);
+console.log(valores);
 console.log(valorActual);
 
 
