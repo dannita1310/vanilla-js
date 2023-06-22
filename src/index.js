@@ -35,3 +35,48 @@ function mostrarHoraActual() {
   elementoHora.textContent = obtenerHoraActual();
 }
 setInterval(mostrarHoraActual, 1000);
+
+//Parte 2.
+
+function obtenerUsuarios() {
+  fetch("http://localhost:3000/users")
+    .then((response) => response.json())
+    .then((data) => {
+      console.log("Lista de usuarios", data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+obtenerUsuarios();
+
+//Parte 3.
+function obtenerListaDeUsuarios() {
+  return new Promise(function (resolve, reject) {
+    fetch("http://localhost:3000/users")
+      .then(function (response) {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Error al obtener los usuarios");
+        }
+      })
+      .then(function (usuarios) {
+        resolve(usuarios);
+      })
+      .catch(function (error) {
+        reject(error);
+      });
+  });
+}
+
+async function obtenerUsuariosAsync() {
+  try {
+    const usuarios = await obtenerUsuarios();
+    console.log("Usuarios obtenidos:", usuarios);
+  } catch (error) {
+    console.error("Error al obtener los usuarios:", error);
+  }
+}
+
+obtenerUsuariosAsync();
