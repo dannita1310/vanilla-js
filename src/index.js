@@ -1,2 +1,1 @@
-// Inserte el código aquí
-
+import { sumar, restar, dividir, multiplicar } from "./calculadora.js";
