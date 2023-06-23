@@ -28,7 +28,7 @@ function dividir(numero1, numero2) {
   return numero1 / numero2;
 }
 
-let resultadoDivisión = dividir(4, 8);
+let resultadoDivisión = dividir(4, 0);
 let resultadoDivisión2 = dividir(10, 15);
 
 console.log("El resultado de division 1 es:", resultadoDivisión);
