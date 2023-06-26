@@ -7,6 +7,102 @@ body {
   font-family: "Playfair", serif;
 }
 
+@media (max-width: 320px) {
+  body {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Orbitron", sans-serif;
+    font-family: "Playfair", serif;
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 900px;
+    background: url("https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg");
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 150px;
+  }
+
+  .box {
+    margin: 40px;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .value {
+    background-color: rgba(255, 188, 224, 0.8);
+    width: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 70px;
+    border-radius: 5px, 5px, 0 0;
+  }
+
+  .text {
+    background-color: rgba(255, 144, 171, 0.8);
+    width: 100px;
+    height: 30px;
+  }
+
+  #ampm {
+    background-color: rgba(255, 144, 181, 0.8);
+    width: 125px;
+    height: 80px;
+    border-radius: 3px;
+    margin-top: 68px;
+  }
+}
+
+@media (min-width: 768px) {
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 900px;
+    background: url("https://cdn.wallpapersafari.com/97/50/eRwDMy.jpg");
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 150px;
+  }
+
+  .box {
+    margin: 40px;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .value {
+    background-color: rgba(255, 188, 224, 0.8);
+    width: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 70px;
+    border-radius: 5px, 5px, 0 0;
+  }
+
+  .text {
+    background-color: rgba(255, 144, 171, 0.8);
+    width: 100px;
+    height: 30px;
+  }
+
+  #ampm {
+    background-color: rgba(255, 144, 181, 0.8);
+    width: 125px;
+    height: 80px;
+    border-radius: 3px;
+    margin-top: 68px;
+  }
+}
+
 #container {
   display: flex;
   justify-content: center;
